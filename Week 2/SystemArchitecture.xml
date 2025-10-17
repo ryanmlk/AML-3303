@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="system-arch" name="System Architecture">
+    <mxGraphModel dx="1030" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Data Sources -->
+        <mxCell id="2" value="HR Data Sources (Employee Records, Surveys)" style="shape=rectangle;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Data Preprocessing -->
+        <mxCell id="3" value="Data Preprocessing &amp; Feature Engineering" style="shape=process;rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="340" y="120" width="240" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Model Training -->
+        <mxCell id="4" value="Predictive Model (Attrition Classifier)" style="shape=process;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="640" y="120" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Model Output -->
+        <mxCell id="5" value="Attrition Risk Predictions (Stay/Leave)" style="shape=rectangle;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="940" y="120" width="240" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- HR Decision Support -->
+        <mxCell id="6" value="HR Dashboard &amp; Retention Strategies" style="shape=rectangle;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="120" width="260" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Feedback loop label -->
+        <mxCell id="7" value="Feedback: New Data &amp; Outcomes" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="600" y="280" width="260" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="8" edge="1" source="2" target="3" style="endArrow=block;endFill=1;" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" edge="1" source="3" target="4" style="endArrow=block;endFill=1;" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" edge="1" source="4" target="5" style="endArrow=block;endFill=1;" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" edge="1" source="5" target="6" style="endArrow=block;endFill=1;" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Feedback loop arrow -->
+        <mxCell id="12" edge="1" source="6" target="2" style="endArrow=block;endFill=1;dashed=1;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
