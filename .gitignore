@@ -1,4 +1,4 @@
-Week 6/venv/
-Week 7/venv/
+venv/
 Week 7/mlruns/
 Week 7/mlartifacts/
+*.csv
